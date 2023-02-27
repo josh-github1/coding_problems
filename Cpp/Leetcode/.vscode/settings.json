@@ -1,9 +1,7 @@
 {
   "files.associations": {
-    "ostream": "cpp",
     "xstring": "cpp",
     "algorithm": "cpp",
-    "array": "cpp",
     "atomic": "cpp",
     "bit": "cpp",
     "cctype": "cpp",
@@ -28,6 +26,7 @@
     "limits": "cpp",
     "memory": "cpp",
     "new": "cpp",
+    "ostream": "cpp",
     "sstream": "cpp",
     "stdexcept": "cpp",
     "streambuf": "cpp",
@@ -49,6 +48,26 @@
     "xutility": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
-  "cmake.configureSettings": { "gtest_build_samples": "ON" }
-
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "googletest.failed",
+        "settings": {
+          "foreground": "#f00"
+        }
+      },
+      {
+        "scope": "googletest.passed",
+        "settings": {
+          "foreground": "#0f0"
+        }
+      },
+      {
+        "scope": "googletest.run",
+        "settings": {
+          "foreground": "#0f0"
+        }
+      }
+    ]
+  }
 }
